@@ -1,0 +1,23 @@
+{
+  "name": "koa-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node ./server/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-mysql-session": "^0.0.2",
+    "koa-router": "^7.4.0",
+    "koa-session-minimal": "^3.0.4",
+    "md5": "^2.2.1",
+    "moment": "^2.21.0",
+    "mysql": "^2.15.0"
+  }
+}
