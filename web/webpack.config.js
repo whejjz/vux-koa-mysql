@@ -10,7 +10,7 @@ const maniFest = require('../vendors.manifest.json')
 module.exports = {
     mode: 'development',
     entry: {
-        'app': path.join(config.webRoot, 'src/app.js')
+        'app': path.join(config.webRoot, 'src/Main.js')
     },
     output: {
         publicPath: "",
