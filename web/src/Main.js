@@ -1,8 +1,21 @@
-import vue from 'Vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import routes from './Route'
+import app from './App.vue'
+import store from './Store'
 
-const _vm_ = new vue({
+Vue.use(VueRouter)
+
+const router = new VueRouter({
+    mode: 'history',
+    routes
+})
+
+const _vm_ = new Vue({
     el: '#app',
+    router,
+    store,
     render: (createElement) => {
-        return createElement('p', 'asdjlaksjda')
+        return createElement(app)
     }
 })

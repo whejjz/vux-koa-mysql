@@ -8,17 +8,12 @@ const config = {
     apiPort: '3000',
     projectRoot: path.resolve(__dirname, '../../'),
     webRoot: path.resolve(__dirname, '../'),
-    dllDir: path.resolve(__dirname, '../dist/dll'),
-    dev:{
-        index: path.resolve(__dirname, '../index.html'),
-        assetsRoot: '',
-        assetsSubDirectory: 'static',
-        assetsPublicPath: '/'
-    },
-    build:{
+    dllRoot: path.resolve(__dirname, '../dist/dll'),
+    dllPath: 'assets/js',
+    assetsRoot: 'assets/',
+    proxy: {
 
-    },
-    proxy: {}
+    }
 }
 
 module.exports = config
