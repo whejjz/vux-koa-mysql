@@ -1,11 +1,16 @@
 <template>
     <section class="l-main">
-        <router-view></router-view>
+        <div class="l-content">
+            <router-view></router-view>
+        </div>
+        <my-footer></my-footer>
     </section>
 </template>
 <script>
+    import myFooter from 'components/footer'
     export default {
         components: {
+            myFooter
         },
         beforeCreate () {
 
@@ -38,7 +43,6 @@
         padding: 0;
         box-sizing: border-box;
     }
-
     body{
         position: absolute;
         width: 100%;
@@ -48,5 +52,13 @@
         overflow-x: hidden;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
+    }
+    .l-content{
+        position: absolute;
+        top: 0;
+        bottom: 55px;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 </style>

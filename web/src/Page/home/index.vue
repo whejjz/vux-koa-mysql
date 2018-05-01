@@ -1,16 +1,16 @@
 <template>
     <div class="c-home">
         <my-header></my-header>
-        <my-footer></my-footer>
+        <my-banner></my-banner>
     </div>
 </template>
 <script>
     import myHeader from 'components/header'
-    import myFooter from 'components/footer'
+    import myBanner from 'components/banner'
     export default {
         components: {
             myHeader,
-            myFooter
+            myBanner
         },
         data () {
             return {}
