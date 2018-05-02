@@ -7,7 +7,6 @@
             <swipe-item>
                 <img src="../Images/banner-2.jpg"/>
             </swipe-item>
-            <swipe-item>3</swipe-item>
         </swipe>
     </div>
 </template>

@@ -52,6 +52,11 @@
         overflow-x: hidden;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
+        font-size: 12px;
+        color: #000;
+    }
+    a{
+        text-decoration: none;
     }
     .l-content{
         position: absolute;
