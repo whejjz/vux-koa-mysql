@@ -3,6 +3,7 @@
         <my-header></my-header>
         <my-banner></my-banner>
         <my-type></my-type>
+        {{test}}
     </div>
 </template>
 <script>
@@ -16,7 +17,13 @@
             myType
         },
         data () {
-            return {}
+            return {
+                test: 1
+            }
+        },
+        mounted () {
+            console.log(this)
+            this._data.test = 2
         }
     }
 </script>

@@ -6,6 +6,7 @@ const openBrowserPlugin = require('open-browser-webpack-plugin')
 const progressPlugin = require('progress-bar-webpack-plugin')
 const addHtmlPlugin = require('add-asset-html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const renderPlugin = require('prerender-spa-plugin')
 const maniFest = require('../vendors.manifest')
 
 module.exports = [
@@ -36,4 +37,8 @@ module.exports = [
     }),
     new openBrowserPlugin({url: `http://${config.host}:${config.port}`}),
     new progressPlugin(),
+    new renderPlugin({
+            staticDir:path.join(config.webRoot, 'dist'),
+            routes:['/']
+    })
 ]
